@@ -10,3 +10,6 @@ while True:
 
 print('You input', len(product), 'item(s)')
 print('Here is your list:', product)
+
+for p in product:
+    print('The price of', p[0], 'is', p[1])
