@@ -1,3 +1,4 @@
+# This is a product recorder
 
 product = []
 while True:
@@ -13,3 +14,9 @@ print('Here is your list:', product)
 
 for p in product:
     print('The price of', p[0], 'is', p[1])
+
+
+with open('product.csv', 'w') as f:
+    f.write('Name' + ',' + 'Price' + '\n')
+    for p in product:
+        f.write(p[0] + ',' + p[1] + '\n')

@@ -1,0 +1,3 @@
+water,10
+egg,5
+candy,15
