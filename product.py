@@ -16,7 +16,7 @@ for p in product:
     print('The price of', p[0], 'is', p[1])
 
 
-with open('product.csv', 'w') as f:
+with open('product.csv', 'w', encoding = 'utf-8') as f:
     f.write('Name' + ',' + 'Price' + '\n')
     for p in product:
         f.write(p[0] + ',' + p[1] + '\n')
