@@ -3,10 +3,12 @@
 import os
 
 product = []
+
+# Check file is present
 if os.path.isfile('product.csv'):
     print('File is present')
     
-    # Read the existing file and add more items
+    # Read the existing file
     with open('product.csv', 'r', encoding = 'utf-8') as f:
         for line in f:
             if 'Name,Price' in line:
